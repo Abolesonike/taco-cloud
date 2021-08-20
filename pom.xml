@@ -73,25 +73,15 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
+        <!-- mysql-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+            <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
-        <!--        <dependency>-->
-        <!--            <groupId>org.elasticsearch.client</groupId>-->
-        <!--            <artifactId>elasticsearch-rest-high-level-client</artifactId>-->
-        <!--            <version>7.9.3</version>-->
-        <!--        </dependency>-->
-        <!--        <dependency>-->
-        <!--            <groupId>org.elasticsearch</groupId>-->
-        <!--            <artifactId>elasticsearch</artifactId>-->
-        <!--            <version>7.9.3</version>-->
-        <!--        </dependency>-->
-        <!--        <dependency>-->
-        <!--            <groupId>org.elasticsearch.client</groupId>-->
-        <!--            <artifactId>elasticsearch-rest-client</artifactId>-->
-        <!--            <version>7.9.3</version>-->
-        <!--        </dependency>-->
     </dependencies>
 
     <build>
@@ -103,4 +93,17 @@
         </plugins>
     </build>
 
+    <!--阿里云 -->
+    <repositories>
+        <repository>
+            <id>alimaven</id>
+            <url>https://maven.aliyun.com/repository/public</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+    <pluginRepository>
+        <id>alimaven</id>
+        <url>https://maven.aliyun.com/repository/public</url>
+    </pluginRepository>
+    </pluginRepositories>
 </project>
